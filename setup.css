@@ -32,7 +32,7 @@
     width: 100%;
   }
   
-  header img[src="logo.png"] {
+  header img[src="rsz_4asery-high-resolution-logo-transparent"] {
     position: relative;
     left: 32px;
   }
@@ -171,28 +171,28 @@
   }
   
   .mainpc {
-    background: url(/images/gep-removebg-preview.png);
+    background: url(gep-removebg-preview.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%;
   }
   
   .testpc {
-    background: url(/images/2ndpc.png);
+    background: url(2ndpc.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%;
   }
   
   #periferiak {
-    background: url(/images/peripherials2.png);
+    background: url(peripherials2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30%;
   }
   
   #software {
-    background: url(/images/vsc.png);
+    background: url(vsc.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30%;
@@ -318,7 +318,7 @@
     transform: scaleX(1);
   }
 
-  img[src="/images/rsz_4asery-high-resolution-logo-transparent.png"] {
+  img[src="rsz_4asery-high-resolution-logo-transparent.png"] {
     display: block;
     max-width: 240px;
     height: auto;

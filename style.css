@@ -13,7 +13,6 @@
     font-family: "Roboto";
     font-size: 17px;
     color: #fff;
-    background-image: url(bgweb.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -44,7 +43,7 @@
     width: 100%;
   }
   
-  header img[src="rsz_4asery-high-resolution-logo-transparent.png"] {
+  header img[src=""] {
     position: relative;
     left: 32px;
   }
@@ -116,7 +115,7 @@
     height: auto;
   }
   
-  img[src="/images/rsz_4asery-high-resolution-logo-transparent.png"] {
+  img[src="rsz_4asery-high-resolution-logo-transparent.png"] {
     display: block;
     max-width: 240px;
     height: auto;
