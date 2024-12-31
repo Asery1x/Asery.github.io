@@ -233,12 +233,11 @@
   
   .faq-question {
     font-weight: bold;
-    cursor: pointer;
     color: #ffffff;
     font-size: 18px;
     padding: 6px 0;
   }
-  
+
   .faq-answer {
     overflow: hidden;
     font-size: 16px;
@@ -247,12 +246,7 @@
     transition: max-height 0.3s ease;
     max-height: 0;
   }
-  
-  .faq-answer.show {
-    max-height: 1000px;
-    /* Adjust the value as per your content's height */
-  }
-  
+
   a,
   a:active,
   a:visited {
