@@ -1,0 +1,348 @@
+@font-face {
+    font-family: "TW Cen Mt Condensed Bold";
+    src: url("TCCB.TTF") format("truetype");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto";
+    font-size: 17px;
+    color: #fff;
+    background-image: url(bgweb.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-color: #202124;
+  }
+  
+  h1 {
+    font-family: "Roboto";
+  }
+  
+  header {
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  header img[src="rsz_4asery-high-resolution-logo-transparent.png"] {
+    position: relative;
+    left: 32px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2#about-me-andris {
+    padding-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding-top: 40px;
+  }
+  
+  section {
+    margin-bottom: 12px;
+  }
+  
+  #about-me-andris {
+    width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  
+  #about-me-adri {
+    width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+  }
+  
+  section#adri {
+    /*backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);*/
+    background-color: rgba(163, 163, 163, 0.116);
+  }
+  
+  h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  img[src="/images/rsz_4asery-high-resolution-logo-transparent.png"] {
+    display: block;
+    max-width: 240px;
+    height: auto;
+    float: right;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    margin-left: 13px;
+    border-radius: 10px;
+  }
+  
+  #link-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #link-buttons a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    font-family: "Roboto";
+    backdrop-filter: blur(50px);
+    background-color: rgba(192, 192, 192, 0.5);
+    border: 2px solid black;
+    -webkit-backdrop-filter: blur(50px);
+  }
+  
+  #link-buttons a:hover {
+    background-color: black;
+    color: #fff;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  
+  img[src="logo.png"] {
+    display: block;
+    margin: 0 auto;
+    padding-left: 30px;
+  }
+  
+  .bio-andris {
+    overflow: auto;
+  }
+  
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  /* track color */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* handle color */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  .underline {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+  }
+  
+  .underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .underline:hover::after {
+    transform: scaleX(1);
+  }
+  
+  /* FAQ section */
+  #faq {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 32px;
+    padding-bottom: 15px;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 6px 0;
+  }
+  
+  .faq-answer {
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #ffffff;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+  }
+  
+  .faq-answer.show {
+    max-height: 1000px;
+    /* Adjust the value as per your content's height */
+  }
+  
+  a,
+  a:active,
+  a:visited {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  section.twitch {
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.116);
+  }
+  
+  section.twitch h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+  
+  section.twitch p {
+    text-align: center;
+  }
+  
+  section.twitch .streamframe {
+    border-radius: 15px;
+    max-width: 960px;
+    width: 100%;
+    height: 540px;
+    border: none;
+  }
+  
+  .streamcard {
+    margin: auto;
+    text-align: center;
+  }
+  
+  section.twitch #chat_embed {
+    border-radius: 15px;
+  }
+  
+  .legujabbvid {
+    max-height: calc(100vw * (9 / 16));
+    width: auto;
+    aspect-ratio: 16/9;
+    width: 600px;
+    border: 0px;
+    border-radius: 15px;
+  }
+  
+  .videocont {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 720px) {
+    img[src="profile1.jpg"] {
+      float: none;
+      display: lock;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  
+    img[src="profile2.jpg"] {
+      float: none;
+      display: lock;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  
+    body {
+      font-size: 14px;
+    }
+  
+#about-me-andris {
+    width: 290px;
+    margin: 0 auto;
+    text-align: justify;
+}
+  
+#about-me-adri {
+    width: 290px;
+    margin: 0 auto;
+    text-align: justify;
+}
+  
+img[src="logo.png"] {
+    display: none;
+}
+  
+.legujabbvid {
+    width: 375px;
+}
+}  

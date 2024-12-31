@@ -1,0 +1,329 @@
+@font-face {
+    font-family: "TW Cen Mt Condensed Bold";
+    src: url("TCCB.TTF") format("truetype");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  header {
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  header img[src="logo.png"] {
+    position: relative;
+    left: 32px;
+  }
+  
+  body {
+    font-family: "Roboto";
+    font-size: 12px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #202124;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+  main,
+  footer {
+    margin: 0 auto;
+    padding: 16px;
+    max-width: 1920px;
+  }
+  
+  header h1 {
+    color: white;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+    font-family: "Roboto";
+  }
+  
+  .adrisetup {
+    text-align: center;
+    font-size: 64px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  img[src="logo.png"] {
+    display: block;
+    text-align: center;
+    padding-left: 30px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    font-family: "Roboto";
+  }
+  
+  h1:nth-child(2) {
+    padding-top: 5rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+    border-radius: 15px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .list-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer {
+    background-color: #ddd;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  #periferiak ul li {
+    border-left: 5px solid #2463eb;
+    transition: border 0.1s ease-in-out;
+  }
+  
+  #periferiak ul li:hover {
+    border-left: 10px solid #dddddd;
+  }
+  
+  #recpc ul li {
+    border-left: 5px solid #e0ca00;
+    transition: border 0.1s ease-in-out;
+  }
+  
+  #recpc ul li:hover {
+    border-left: 10px solid #dddddd;
+  }
+  
+  #software ul li {
+    border-left: 5px solid #ec6d18;
+    transition: border 0.1s ease-in-out;
+  }
+  
+  #software ul li:hover {
+    border-left: 10px solid #dddddd;
+  }
+  
+  #pc2 ul li {
+    border-left: 5px solid rgb(86, 16, 252);
+    transition: border 0.1s ease-in-out;
+  }
+  
+  #pc2 ul li:hover {
+    border-left: 10px solid #dddddd;
+  }
+  
+  #cam ul li {
+    border-left: 5px solid #ff3737;
+    transition: border 0.1s ease-in-out;
+  }
+  
+  #cam ul li:hover {
+    border-left: 10px solid #dddddd;
+  }
+  
+  b {
+    padding-bottom: 1px;
+    border-bottom: 0px solid #1a1a1a;
+    transition: border 0.1s ease-in-out;
+  }
+  
+  .mainpc {
+    background: url(/images/gep-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+  
+  .testpc {
+    background: url(/images/2ndpc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+  
+  #periferiak {
+    background: url(/images/peripherials2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+  }
+  
+  #software {
+    background: url(/images/vsc.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+  }
+  
+  .list {
+    flex: 1 1 22%;
+    margin: 10px;
+    border: 0px solid white;
+    background-color: rgba(53, 53, 53, 0.1);
+    padding: 32px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .list ul li {
+    font-size: 16px;
+    padding: 5px;
+    border-left: 5px solid black;
+    transition: border 0.1s ease-in-out;
+  }
+  
+  .list ul li:hover,
+  .software ul li:hover {
+    border-left: 10px solid #dddddd;
+  }
+  
+  .list li,
+  .software li,
+  .contact li {
+    animation: fadeInLeft 1s ease-in-out;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(35px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-35px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .list {
+      padding: 12px;
+      flex: 1 1 100%;
+    }
+  
+    img[src="logo.png"] {
+      display: none;
+    }
+  
+    main,
+    footer {
+      max-width: 600px;
+    }
+  }
+  
+  a,
+  a:visited,
+  a:active {
+    color: white;
+  }
+  
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  /* track color */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* handle color */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  .underline {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+  }
+  
+  .underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .underline:hover::after {
+    transform: scaleX(1);
+  }
+
+  img[src="/images/rsz_4asery-high-resolution-logo-transparent.png"] {
+    display: block;
+    max-width: 240px;
+    height: auto;
+    float: right;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    margin-left: 13px;
+    border-radius: 10px;
+  }
